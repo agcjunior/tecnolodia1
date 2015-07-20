@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TecnoloDia</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="tecnolodiaModule">
+    <div ng-controller="ivianoCtrl as vm" class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>login</td>
+                    <td>nome</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="iviano in vm.ivianos">
+                    <td>{{iviano.login}}</td>
+                    <td>{{iviano.nome}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="app/app.js"></script>
+    <script src="common/common.services.js"></script>
+    <script src="common/ivianoResource.js"></script>
+    <script src="app/ivianos/ivianosCtrl.js"></script>
+</body>
+</html>
